@@ -15,11 +15,11 @@ campoFiltro.addEventListener("input", function () {
             
             if (!expressaoRegular.test(nome)) 
             {
-                paciente.classList.add("ocultar-nome");
+                paciente.classList.add("ocultar-item");
             } 
             else 
             {
-                paciente.classList.remove("ocultar-nome")
+                paciente.classList.remove("ocultar-item")
             }
         }
     } 
@@ -28,7 +28,7 @@ campoFiltro.addEventListener("input", function () {
         for (var i = 0; i < pacientes.length; i++) 
         {
             var paciente = pacientes[i];
-            paciente.classList.remove("ocultar-nome")
+            paciente.classList.remove("ocultar-item")
         }
     }
 

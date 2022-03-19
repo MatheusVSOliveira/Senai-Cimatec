@@ -152,6 +152,6 @@ button[disabled=disabled], button:disabled {
 	margin-bottom: 10px;
 }
 
-.ocultar-nome {
+.ocultar-item {
 	display:none;
 }
