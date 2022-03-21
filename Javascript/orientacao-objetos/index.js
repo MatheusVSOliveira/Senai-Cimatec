@@ -1,29 +1,6 @@
-class Cliente {
-    nome;
-    cpf;
-   
-}
+import {Cliente} from "./Cliente.js"
+import {ContaCorrente} from "./ContaCorrente.js"
 
-class ContaCorrente {
-    agencia;
-    saldo;
-
-    sacar(valor) {
-        if(this.saldo >= valor)
-        {
-            this.saldo -= valor;
-            return valor;
-        }
-    }
-
-    depositar(valor) {
-        if(valor <= 0) 
-        {
-            return;
-        }
-        this.saldo += valor;
-    }
-}
 const cliente1 = new Cliente();
 cliente1.nome = "Ricardo";
 cliente1.cpf = 11122233309;
