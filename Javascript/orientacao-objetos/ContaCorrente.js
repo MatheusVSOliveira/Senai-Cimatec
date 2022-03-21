@@ -1,20 +1,27 @@
 export class ContaCorrente {
+    static numeroDeContas = 0;
     agencia;
     _cliente;
     _saldo = 0;
 
-    set _cliente(novoValor){
+    set cliente(novoValor){
         if(novoValor instanceof Cliente){
             this._cliente = novoValor;
         } 
     }
 
-    get _cliente(){
+    get cliente(){
         this._cliente;
     }
 
-    get _saldo(){
+    get saldo(){
         this._saldo;
+    }
+
+    constructor(cliente, agencia){
+        this._cliente = cliente;
+        this.agencia = agencia;
+        ContaCorrente.numeroDeContas += 1;
     }
 
     sacar(valor) {
